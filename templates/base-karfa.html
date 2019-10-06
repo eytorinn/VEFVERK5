@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %} {% endblock %} </title>
+    <link rel="stylesheet" href="{{ url_for{static , filename='still.css'} }}"
+</head>
+<body>
+    <header>
+        {%  include "teljari.tpl" %}
+    </header>
+    <main>
+    {% block content  %}
+
+     {% endblock %}
+    </main>
+    <footer>
+        <h3>&copy; 2019 EA</h3>
+    </footer>
+</body>
+</html>
